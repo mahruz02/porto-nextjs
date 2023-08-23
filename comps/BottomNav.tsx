@@ -89,7 +89,7 @@ const BottomNav = () => {
       </Link>
       <a
         className="h-full"
-        href="https://github.com/KeiHara/nextjs-portofolio"
+        href="https://github.com/mahruz02"
         target="_blank"
         rel="noreferrer">
         <SideBarIcon
@@ -105,7 +105,7 @@ const BottomNav = () => {
         whileHover={['hover', isDark ? 'darkHighlight' : 'lightHighlight']}
         animate={['initial', isDark ? 'dark' : 'light']}
         whileTap={'tap'}
-        className="group relative cursor-pointer h-full flex items-center"
+        className="relative flex items-center h-full cursor-pointer group"
         onClick={() => toggleTheme()}>
         <motion.div
           initial={false}
@@ -138,7 +138,7 @@ const BottomNav = () => {
             scale: { type: 'spring', bounce: 0.75 },
             borderRadius: { type: 'spring', bounce: 0.75 },
           }}
-          className="flex h-12 w-12 justify-center overflow-hidden shadow-md">
+          className="flex justify-center w-12 h-12 overflow-hidden shadow-md">
           <motion.div
             className="flex h-[180%] flex-col justify-evenly"
             variants={{
@@ -191,7 +191,7 @@ const SideBarIcon = ({
           ? ['toggled', isDark ? 'darkHighlight' : 'lightHighlight']
           : ['unToggled', isDark ? 'dark' : 'light']
       }
-      className="group relative h-full flex items-center">
+      className="relative flex items-center h-full group">
       <motion.div
         whileTap={{ scale: 0.9 }}
         initial={false}

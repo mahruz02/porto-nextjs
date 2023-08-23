@@ -90,7 +90,7 @@ const SideBar = () => {
           />
         </a>
       </Link>
-      <hr className="mx-5 rounded-full border border-gray-100 bg-gray-100 dark:border-zinc-700 dark:bg-zinc-700" />
+      <hr className="mx-5 bg-gray-100 border border-gray-100 rounded-full dark:border-zinc-700 dark:bg-zinc-700" />
       <Link href="/works">
         <a draggable={false}>
           <SideBarIcon
@@ -102,21 +102,21 @@ const SideBar = () => {
         </a>
       </Link>
       <a
-        href="https://github.com/KeiHara/nextjs-portofolio"
+        href="https://github.com/mahruz02"
         target="_blank"
         rel="noreferrer"
       >
         <SideBarIcon
           icon={() => <FaGithub size={28} />}
           toggled={toggledSideBarIcon[3]}
-          text="Source"
+          text="GitHub"
           isDark={isDark}
         />
       </a>
       <motion.div
         whileHover={["hover", isDark ? "darkHighlight" : "lightHighlight"]}
         animate={["initial", isDark ? "dark" : "light"]}
-        className="group relative mt-auto cursor-pointer py-2"
+        className="relative py-2 mt-auto cursor-pointer group"
         onClick={() => setIsOnLeft(!isOnLeft)}
       >
         <motion.div
@@ -142,7 +142,7 @@ const SideBar = () => {
             scale: { type: "spring", bounce: 0.75 },
             borderRadius: { type: "spring", bounce: 0.75 }
           }}
-          className="mx-auto flex h-12 w-12 items-center justify-center shadow-md"
+          className="flex items-center justify-center w-12 h-12 mx-auto shadow-md"
         >
           {isOnLeft ? <FaArrowRight size={28} /> : <FaArrowLeft size={28} />}
         </motion.div>
@@ -178,10 +178,10 @@ const SideBar = () => {
             translateY: "-50%",
             left: "120%"
           }}
-          className="flex min-w-max items-center rounded-md bg-neutral-100 p-2 text-sm font-bold shadow-md dark:bg-zinc-800"
+          className="flex items-center p-2 text-sm font-bold rounded-md shadow-md min-w-max bg-neutral-100 dark:bg-zinc-800"
         >
-          <div className="absolute left-0 inline-block w-2 -translate-x-full overflow-hidden">
-            <div className="h-3 origin-top-right -rotate-45 transform bg-neutral-100 dark:bg-zinc-800"></div>
+          <div className="absolute left-0 inline-block w-2 overflow-hidden -translate-x-full">
+            <div className="h-3 origin-top-right transform -rotate-45 bg-neutral-100 dark:bg-zinc-800"></div>
           </div>
           {isOnLeft ? "Move to right" : "Move to left"}
         </motion.span>
@@ -192,7 +192,7 @@ const SideBar = () => {
         whileHover={["hover", isDark ? "darkHighlight" : "lightHighlight"]}
         animate={["initial", isDark ? "dark" : "light"]}
         whileTap={"tap"}
-        className="group relative cursor-pointer py-2"
+        className="relative py-2 cursor-pointer group"
         onClick={() => toggleTheme()}
       >
         <motion.div
@@ -226,7 +226,7 @@ const SideBar = () => {
             scale: { type: "spring", bounce: 0.75 },
             borderRadius: { type: "spring", bounce: 0.75 }
           }}
-          className="mx-auto flex h-12 w-12 justify-center overflow-hidden shadow-md"
+          className="flex justify-center w-12 h-12 mx-auto overflow-hidden shadow-md"
         >
           <motion.div
             className="flex h-[180%] flex-col justify-evenly"
@@ -277,10 +277,10 @@ const SideBar = () => {
             translateY: "-50%",
             left: "120%"
           }}
-          className="flex min-w-max items-center rounded-md bg-neutral-100 p-2 text-sm font-bold shadow-md dark:bg-zinc-800"
+          className="flex items-center p-2 text-sm font-bold rounded-md shadow-md min-w-max bg-neutral-100 dark:bg-zinc-800"
         >
-          <div className="absolute left-0 inline-block w-2 -translate-x-full overflow-hidden">
-            <div className="h-3 origin-top-right -rotate-45 transform bg-neutral-100 dark:bg-zinc-800"></div>
+          <div className="absolute left-0 inline-block w-2 overflow-hidden -translate-x-full">
+            <div className="h-3 origin-top-right transform -rotate-45 bg-neutral-100 dark:bg-zinc-800"></div>
           </div>
           Change theme
         </motion.span>
@@ -306,7 +306,7 @@ const SideBarIcon = ({
           ? ["toggled", isDark ? "darkHighlight" : "lightHighlight"]
           : ["unToggled", isDark ? "dark" : "light"]
       }
-      className="group relative py-2"
+      className="relative py-2 group"
     >
       <motion.div
         whileTap={{ scale: 0.9 }}
@@ -375,10 +375,10 @@ const SideBarIcon = ({
           translateY: "-50%",
           left: "120%"
         }}
-        className="flex min-w-max items-center rounded-md bg-neutral-100 p-2 text-sm font-bold shadow-md dark:bg-zinc-800"
+        className="flex items-center p-2 text-sm font-bold rounded-md shadow-md min-w-max bg-neutral-100 dark:bg-zinc-800"
       >
-        <div className="absolute left-0 inline-block w-2 -translate-x-full overflow-hidden">
-          <div className="h-3 origin-top-right -rotate-45 transform bg-neutral-100 dark:bg-zinc-800"></div>
+        <div className="absolute left-0 inline-block w-2 overflow-hidden -translate-x-full">
+          <div className="h-3 origin-top-right transform -rotate-45 bg-neutral-100 dark:bg-zinc-800"></div>
         </div>
         {text}
       </motion.span>
