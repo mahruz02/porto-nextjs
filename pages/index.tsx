@@ -19,15 +19,15 @@ const Home: NextPage = () => {
       animate="enter"
     >
       <Head>
-        <title>Ahmad Mahrus | About me</title>
+        <title>Keisuke Hara | About me</title>
       </Head>
 
       {/* Intro */}
       <div className="flex justify-between pt-4">
         <div>
-          <h1 className="text-4xl font-bold dark:text-white">Ahmad Mahrus</h1>
+          <h1 className="text-4xl font-bold dark:text-white">Keisuke Hara</h1>
           <p className="dark:text-white">
-            Software Engineer (Web Developer / IT Support)
+            Software Engineer (Frontend Engineer / Musician)
           </p>
         </div>
         {/* prof pic */}
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
           <a
             draggable={false}
             target="_blank"
-            href="https://www.linkedin.com/in/ahmad-mahrus-595537261/"
+            href="https://www.linkedin.com/in/keisuke-hara/"
             rel="noreferrer"
           >
             <div className="flex items-center justify-center group">
@@ -61,11 +61,22 @@ const Home: NextPage = () => {
           About
         </h3>
         <p className="tracking-wide text-justify dark:text-white">
-        A passionate web developer with a knack for creating captivating online experiences. Proficient in design, coding,
-        troubleshooting, and deploying websites. Skilled in collaborating with clients and teams to deliver exceptional
-        results. Experienced in HTML, CSS, JavaScript, Laravel, and MySQL, I thrive on transforming concepts into
-        seamless digital realities.</p>
-          
+          Keisuke is a final year student studying a Bachelor of Science at the
+          University of Auckland, majoring in Computer Science. He is passionate
+          about taking on opportunities to improve his web development skills
+          actively. He is currently working as a Frontend engineer / Mobile app
+          developer at{' '}
+          <a
+            draggable={false}
+            className="hover:text-sky500 inline-block origin-bottom-right indent-0 tracking-wide text-sky-700 duration-200 ease-linear after:float-left after:h-0.5 after:w-full after:origin-center after:scale-0 after:rounded-sm after:bg-sky-700 after:duration-200 hover:text-sky-600 hover:after:scale-100  hover:after:bg-sky-600 dark:text-teal-300 after:dark:bg-teal-300 hover:dark:text-teal-200 hover:after:dark:bg-teal-200"
+            href="https://kekeno.tech/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Kekeno Tech
+          </a>
+          , developing a variety of projects.
+        </p>
       </div>
       {/* Bio */}
       <div className="flex flex-col mt-4">
